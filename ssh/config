@@ -1,0 +1,14 @@
+Host *
+    ServerAliveInterval 60
+
+Host jumpserver
+    Hostname 1.1.1.1
+    Port 52022
+    User ylzhang
+    IdentityFile ~/.ssh/id_rsa.jumpserver
+
+Host worker
+    Hostname 2.2.2.2
+    User root
+    IdentityFile ~/.ssh/id_rsa
+    ProxyJump jumpserver
