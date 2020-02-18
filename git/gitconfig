@@ -1,0 +1,8 @@
+[user]
+	email = alazyer@gmail.com
+	name = Yuliang Zhang
+[core]
+	editor = vim
+[alias]
+    st = status
+    co = checkout
